@@ -1,10 +1,17 @@
 :root {
   --backnav1: rgb(130, 113, 135);
-  --backnav: linear-gradient(90deg, rgba(151,132,176,1) 17%, rgba(184,101,224,1) 67%, rgba(154,0,255,1) 100%);
-  --background: linear-gradient(180deg, rgba(8,6,33,1) 29%, rgba(37,29,54,1) 67%, rgba(88,56,120,1) 100%);
+  --backnav: linear-gradient(90deg,
+    rgba(151, 132, 176, 1) 17%,
+    rgba(184, 101, 224, 1) 67%,
+    rgba(154, 0, 255, 1) 100%);
+  --background: linear-gradient(180deg,
+    rgba(8, 6, 33, 1) 29%,
+    rgba(37, 29, 54, 1) 67%,
+    rgba(88, 56, 120, 1) 100%);
   --letter: #ffffff;
-  --border:rgb(82, 80, 80);
+  --border: rgb(82, 80, 80);
   --hover: rgb(131, 6, 150);
+  --button: rgb(39, 40, 67);
 }
 * {
   margin: 0;
@@ -13,8 +20,7 @@
   text-decoration: none;
   list-style-type: none;
   color: var(--letter);
-  font-family: 'Poppins', sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
 header {
   display: flex;
@@ -39,16 +45,15 @@ header nav ul {
   justify-content: space-between;
   font-size: 20px;
 }
-header nav{
-    gap: 150px;
+header nav {
+  gap: 150px;
 }
 
-header nav ul :hover{
-background-color: var(--hover);
-border-radius: 15px;
-font-size: 25px;
-padding: 5px;
-
+header nav ul :hover {
+  background-color: var(--hover);
+  border-radius: 15px;
+  font-size: 25px;
+  padding: 5px;
 }
 header nav img {
   display: flex;
@@ -58,129 +63,231 @@ header nav img {
   padding: 5px;
   cursor: pointer;
 }
-main{
+main {
   background: var(--background);
   flex-direction: column;
   display: flex;
   width: 100%;
-  }
-  main section{
-    display: flex;
-    justify-content: center;
-    height: 600px;
-   padding: 50px;
-   gap: 80px;
-  }
-  .description{
-    display: flex;
-    flex-direction: column;
-    max-width: 40%;
-    height: 500px;
-    justify-content: center;
-    gap: 30px;
-    font-size: 20px;
-  }
-  .description h1{
-    font-size: 50px;
-  }
-  .description span{
-    font-weight: bold;
-    font-size: 25px;
-
-  }
-  .description input{
-    background-color: rgb(42, 100, 100);
-    border: none;
-    width: 140px;
-    padding: 5px;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  .sec{
-background: var(--backnav);
-display: flex;
-flex-direction: column;
-border-radius: 20px;
-padding: 15px;
-height: 500px;
-width: 300px;
-align-items: center;
-gap: 20px;
-  }
-.sec img{
+}
+main section {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  padding: 50px;
+  gap: 80px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  height: 500px;
+  justify-content: center;
+  gap: 30px;
+  font-size: 20px;
+}
+.description h1 {
+  font-size: 50px;
+}
+.description span {
+  font-weight: bold;
+  font-size: 25px;
+}
+.description input {
+  background-color: rgb(42, 100, 100);
+  border: none;
+  width: 140px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.sec {
+  background: var(--backnav);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 15px;
+  height: 500px;
+  width: 300px;
+  align-items: center;
+  gap: 20px;
+}
+.sec img {
   width: 240px;
   border-radius: 10px;
-  box-shadow: 0px 0px 7px 7px rgb(59, 3, 68) ;
+  box-shadow: 0px 0px 7px 7px rgb(59, 3, 68);
 }
-.til{
+.til {
   display: flex;
   gap: 10px;
   align-items: center;
-  }
-  #position{
-    background: var(--hover);
-    padding: 5px;
-    border-radius: 5px;
-  }
-  .creator{
-    display: flex;
-    gap: 20px;
-  }
-  .creator img{
-    width: 60px;
-    height: 50px;
-    box-shadow: none;
-  }
- .creat-name {
+}
+#position {
+  background: var(--hover);
+  padding: 5px;
+  border-radius: 5px;
+}
+.creator {
+  display: flex;
+  gap: 20px;
+}
+.creator img {
+  width: 60px;
+  height: 50px;
+  box-shadow: none;
+}
+.creat-name {
   display: flex;
   flex-direction: column;
   gap: 2px;
- } 
- .creat-name h4{
+}
+.creat-name h4 {
   font-weight: bold;
   font-size: 15px;
- }
- .creat-name p{
+}
+.creat-name p {
   color: rgb(64, 61, 61);
- }
+}
 
- #titulo2{
- display: flex;
- margin-left: auto;
- margin-right: auto;
- font-size: 35px;
-  }
-  .confi-nft{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    gap: 50px;
-  }
-  .confi{
-    display: flex;
-    flex-direction: column;
-    background: var(--backnav);
-    height: 260px;
-    width: 207px;
-    border-radius: 30px;
-    align-items: center;
-    padding: 10px;
-    gap: 5px;
-    box-shadow: 0px 0px 5px 5px #271830;
-  }
-  #monitor{
-    width: 80px;
-  }
-  .confi h3{
-color: rgb(53, 50, 50);
+#titulo2 {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 35px;
+}
+.confi-nft {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 50px;
+}
+.confi {
+  display: flex;
+  flex-direction: column;
+  background: var(--backnav);
+  height: 260px;
+  width: 207px;
+  border-radius: 30px;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+  box-shadow: 0px 0px 5px 5px #271830;
+}
+#monitor {
+  width: 80px;
+}
+.confi h3 {
+  color: rgb(53, 50, 50);
+}
+.confi p {
+  color: rgb(32, 30, 30);
+  text-align: center;
+  line-height: 15px;
+}
+#nueva-era {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.nueva-era {
+  display: flex;
+  justify-content: center;
+}
+.nueva-era h2 {
+  font-size: 30px;
+  max-width: 500px;
+}
+.info-nueva-era {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 600px;
+}
+.info-nueva-era a {
+  border-bottom: 1px solid var(--letter);
+  font-weight: bold;
+  max-width: 130px;
+}
+.funko-star-wars {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.funko-star-wars img {
+  height: 300px;
+}
+.hot-nft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.botones {
+  display: flex;
+  gap: 20px;
+}
+.categoria{
+  display: flex;
+  background: var(--button);
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.activa{
+  background-color: rgb(47, 135, 135);
+}
+.cartas{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.personajes{
+  background: var(--backnav);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 500px;
+  border-radius: 15px;
+  gap: 5px;
+}
+#Funko-per{
+  width: 300px;
+}
+.personajes section{
+  display: flex;
+  padding: 5px;
+  max-height: 150px;
+}
 
+.carta-des{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
   }
-  .confi p{
-    color: rgb(32, 30, 30);
-    text-align: center;
-    line-height: 15px;
-  }
+.carta-des-per{
+  display: flex;
+  gap: 15px;
 
-
+}
+.per-valor{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px; 
+}
+.per-valor button{
+  background: var(--button);
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+}
 
